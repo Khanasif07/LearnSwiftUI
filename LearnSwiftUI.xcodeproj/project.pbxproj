@@ -285,7 +285,7 @@
 		8467A8F427C912A700F42465 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
@@ -523,6 +523,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LearnSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 9FB7FZVQ5R;
 				ENABLE_PREVIEWS = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LearnSwiftUI/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = LearnSwiftUI;
@@ -544,6 +545,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				"SYSTEM_FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Dev;
@@ -583,6 +585,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				"SYSTEM_FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -795,6 +798,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				"SYSTEM_FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Stage;
@@ -810,7 +814,7 @@
 				8467A90927C912A800F42465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Dev;
 		};
 		8467A90A27C912A800F42465 /* Build configuration list for PBXNativeTarget "LearnSwiftUI" */ = {
 			isa = XCConfigurationList;
@@ -820,7 +824,7 @@
 				8467A90C27C912A800F42465 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Dev;
 		};
 		84C37DB9294637E8008AAE7C /* Build configuration list for PBXNativeTarget "LearnSwiftUI-Tests" */ = {
 			isa = XCConfigurationList;
@@ -830,7 +834,7 @@
 				84C37DB8294637E8008AAE7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Dev;
 		};
 /* End XCConfigurationList section */
 	};
