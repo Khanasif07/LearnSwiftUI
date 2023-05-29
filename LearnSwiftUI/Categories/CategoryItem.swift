@@ -18,8 +18,9 @@ struct CategoryItem: View {
                 .cornerRadius(5)
             Text(landmark.name).foregroundColor(.primary)
                 .font(.subheadline)
+            Spacer()
         }
-        .padding(.leading, 15)
+        .padding([.leading,.bottom], 15)
     }
 }
 

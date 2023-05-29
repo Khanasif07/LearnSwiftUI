@@ -13,10 +13,11 @@ struct CategoryRow: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(categoryName)
-                .font(.headline)
-                .padding(.leading, 15)
-                .padding(.top, 5)
+//            Text(categoryName)
+//                .font(.headline)
+//                .padding(.leading, 15)
+//                .padding(.top, 5)
+            SectionTitleView(title: categoryName).frame(height: 40.0)
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
@@ -29,7 +30,7 @@ struct CategoryRow: View {
                     }
                 }
             }
-            .frame(height: 185)
+            .frame(height: 195)
         }
     }
 }

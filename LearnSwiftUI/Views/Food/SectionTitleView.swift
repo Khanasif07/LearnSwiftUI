@@ -23,7 +23,7 @@ struct SectionTitleView: View {
             Text("See All")
                 .foregroundColor(.pink)
            
-        }.padding([.leading,.trailing],10.0)
+        }.padding([.leading,.trailing],15.0)
     }
 }
 
