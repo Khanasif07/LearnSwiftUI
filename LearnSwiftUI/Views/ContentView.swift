@@ -23,12 +23,18 @@ struct ContentView: View {
             }
 
                 .tag(Tab.list)
+            
+            HomeView().tabItem {
+                Label("Home", systemImage: "pencil.circle.fill")
+            }
+                .tag(Tab.home)
         }
     }
     
     enum Tab {
            case featured
            case list
+           case home
        }
 
 }
