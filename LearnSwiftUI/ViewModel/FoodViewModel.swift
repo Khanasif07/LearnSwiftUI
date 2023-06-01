@@ -37,7 +37,7 @@ final class HomeViewModel: ObservableObject {
             } receiveValue: { [weak self] responseData in
                 self?.allDishes = responseData.data
                 self?.viewState = .dataLoaded
-                print(self?.allDishes)
+                print(self?.allDishes ?? [])
             }
             .store(in: &cancellables)
     }
@@ -51,7 +51,7 @@ struct APIResponse: Decodable {
 }
 
 struct AllDishes: Decodable {
-    let categories: [DishCategory]
+    let categories: [DishCategory]?
     let populars: [Dish]
     let specials: [Dish]
 }
