@@ -9,10 +9,15 @@ import SwiftUI
 
 @main
 struct LearnSwiftUIApp: App {
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
     @StateObject private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(modelData)
+            if isOnboarding {
+                OnboardingView()
+            }else{
+                ContentView().environmentObject(modelData)
+            }
         }
     }
 }

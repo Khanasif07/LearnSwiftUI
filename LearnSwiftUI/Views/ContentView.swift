@@ -28,6 +28,16 @@ struct ContentView: View {
                 Label("Home", systemImage: "pencil.circle.fill")
             }
                 .tag(Tab.home)
+            
+            PinchView().tabItem {
+                Label("PINCH", systemImage: "pencil.circle.fill")
+            }
+                .tag(Tab.pinch)
+            
+            FruitListView().tabItem{
+                Label("Fruits", systemImage: "list.bullet")
+            }
+            .tag(Tab.pinch)
         }
     }
     
@@ -35,6 +45,8 @@ struct ContentView: View {
            case featured
            case list
            case home
+           case pinch
+           case fruits
        }
 
 }
